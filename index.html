@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Reports</title>
+    <link rel="stylesheet" href="assets/build/css/style.min.css">
+    <meta name="description" content="Hosting reports meta desc">
+    <meta name="keywords" content="Hosting reports meta keywords">
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <meta name="theme-color" content="#6560f8">
+</head>
+<body>
+<div class="main-offcanvas">
+    <div class="main-offcanvas-padding">
+        Offcanvas content here
+    </div>
+</div>
+<header class="main-header">
+    <div class="container">
+        <div class="main-header-left">
+            <a href="#" class="main-header-toggler" data-offcanvas title="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="main-header-toggler-svg"><path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z" fill="#fff"></path></svg>
+            </a>
+
+            <a href="index.html" class="main-header-logo">
+                <img src="assets/img/logo-white.svg" width="125" height="34" alt="Hosting Reports">
+            </a>
+        </div>
+
+        <div class="main-header-center">
+            <ul class="main-header-menu">
+                <li class="main-header-menu-item main-header-menu-item-active main-header-menu-item-parent">
+                    <div class="dropdown is-hoverable">
+                        <div class="dropdown-trigger">
+                            <a href="#" class="main-header-menu-item-link" aria-haspopup="true" aria-controls="dropdown-menu">
+                                <span>Find Your Hosting</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    VPS Hosting
+                                </a>
+                                <a class="dropdown-item">
+                                    Shared Hosting
+                                </a>
+                                <a href="#" class="dropdown-item is-active">
+                                    Dedicated Hosting
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    VPS Hosting
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item">
+                                    Dedicated Hosting
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    VPS Hosting
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Dedicated Hosting
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-header-menu-item">
+                    <a href="#" class="main-header-menu-item-link">
+                        Reviews
+                    </a>
+                </li>
+                <li class="main-header-menu-item">
+                    <a href="#" class="main-header-menu-item-link">
+                        Coupons
+                    </a>
+                </li>
+                <li class="main-header-menu-item">
+                    <a href="#" class="main-header-menu-item-link">
+                        Guide
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-header-right">
+            <a href="#" data-toggle-search class="main-header-search" title="Search">
+                <img src="assets/img/icons/icon-search.svg" class="main-header-search-img" width="32" height="32" alt="🔍">
+            </a>
+
+            <div id="js-search-modal" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <form action="#" class="search-modal" method="POST">
+                        <input type="search" class="search-modal-input" name="search" placeholder="...">
+                        <input type="submit" class="search-modal-submit" value="Search">
+                    </form>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+
+            <div class="main-header-language">
+                <div class="dropdown is-hoverable is-right">
+                    <div class="dropdown-trigger">
+                        <a href="#" class="main-header-language-current" aria-haspopup="true" aria-controls="dropdown-language-menu">
+                            <span>ENG</span>
+                        </a>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-language-menu" role="menu">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item is-active">
+                                ENG
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                GER
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                RUS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="hero-block">
+    <div class="container hero-block-container">
+        <div class="hero-block-content">
+            <div class="breadcrumbs hero-block-breadcrumbs breadcrumbs-light">
+                <div class="breadcrumbs-home">
+                    <a href="#" class="breadcrumbs-home-link">
+                        <img src="assets/img/icons/icon-home-light.svg" class="breadcrumbs-home-icon" alt="🏠">
+                        Home
+                    </a>
+                </div>
+                <div class="breadcrumbs-separator">
+                    <img src="assets/img/icons/icons-breadcrumbs-arrow-right-white.svg" alt="→">
+                </div>
+                <div class="breadcrumbs-item">
+                    <a href="#" class="breadcrumbs-item-link">
+                        Find Your Hosting
+                    </a>
+                </div>
+            </div>
+
+            <h1 class="hero-block-title">
+                Best Online Hosting for June 2019
+            </h1>
+            <div class="hero-block-desc">
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et  at vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est lorem ipsum dolor sit amet.
+                </p>
+            </div>
+        </div>
+        <div class="hero-block-buttons">
+            <a href="#" class="hero-block-buttons-item hero-block-buttons-item-parent">
+                <div class="hero-block-buttons-item-icon">
+                    <img class="hero-block-buttons-item-icon-img" src="assets/img/icons/icon-server.svg" alt="">
+                </div>
+                Web Hosting
+            </a>
+            <a href="#" class="hero-block-buttons-item hero-block-buttons-item-parent">
+                <div class="hero-block-buttons-item-icon">
+                    <img class="hero-block-buttons-item-icon-img" src="assets/img/icons/icon-ip-location.svg" alt="">
+                </div>
+                Server Location
+            </a>
+            <a href="#" class="hero-block-buttons-item hero-block-buttons-item-parent">
+                <div class="hero-block-buttons-item-icon">
+                    <img class="hero-block-buttons-item-icon-img" src="assets/img/icons/icon-notebook.svg" alt="">
+                </div>
+                CMS Hosting
+            </a>
+        </div>
+    </div>
+</section>
+
+<main class="main-content main-content-padding">
+    <div class="container">
+        <div class="mb-xxl">
+            <h2 class="has-text-centered">
+                Lorem ipsum dolor sit amet consetetur
+            </h2>
+            <p class="has-text-centered">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+            </p>
+        </div>
+
+        <div class="columns is-desktop">
+            <div class="column is-three-quarters-desktop">
+
+                <div class="hosting-list mb-xl">
+                    <div class="hosting-list-header">
+                        <div class="hosting-list-header-item hosting-list-header-item-hosting">
+                            Hosting
+                        </div>
+                        <div class="hosting-list-header-item hosting-list-header-item-review">
+                            Review
+                        </div>
+                        <div class="hosting-list-header-item hosting-list-header-item-bandwidth">
+                            Bandwidth
+                        </div>
+                        <div class="hosting-list-header-item hosting-list-header-item-storage">
+                            Storage
+                        </div>
+                        <div class="hosting-list-header-item hosting-list-header-item-domain">
+                            Domain
+                        </div>
+                        <div class="hosting-list-header-item hosting-list-header-item-performance">
+                            Performance
+                        </div>
+                        <div class="hosting-list-header-item hosting-list-header-item-price">
+                            Price
+                        </div>
+                        <div class="hosting-list-header-item hosting-list-header-item-action">
+                            Action
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-greengeeks.png" alt="GreenGeeks" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        GreenGeeks
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        GreenGeeks review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-fatcow.png" alt="Fatcow" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        Fatcow
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        Fatcow review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-greengeeks.png" alt="GreenGeeks" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        GreenGeeks
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        GreenGeeks review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="mt-0">
+                    Lorem ipsum dolor sit amet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                </h2>
+                <div class="user-content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+
+                    <h2>
+                        Aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                    </h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card card-padding mb-xs">
+                    <div class="card-title">
+                        Web Hosting
+                    </div>
+
+                    <ul class="card-menu">
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Shared Hosting</a>
+                        </li>
+                        <li class="card-menu-item card-menu-item-active">
+                            <a href="#" class="card-menu-item-link">VPS Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Reseller Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Dedicated Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Ecommerce Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Cloud Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Email Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Blog Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Unlimited Hosting</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card card-padding mb-xs">
+                    <div class="card-title">
+                        Managed
+                    </div>
+
+                    <ul class="card-menu">
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Managed Hosting</a>
+                        </li>
+                        <li class="card-menu-item card-menu-item-active">
+                            <a href="#" class="card-menu-item-link">Unmanaged Hosting</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card card-padding">
+                    <div class="card-title">
+                        OS System
+                    </div>
+
+                    <ul class="card-menu">
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Linux Hosting</a>
+                        </li>
+                        <li class="card-menu-item card-menu-item-active">
+                            <a href="#" class="card-menu-item-link">Windows Hosting</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<section class="subscribe-block">
+    <div class="container">
+        <h3 class="subscribe-block-title">
+            Sign up, get saving!
+        </h3>
+        <div class="subscribe-block-subtitle">
+            Newsletter subscribers save more with today's best prices and deals
+        </div>
+        <form action="#" method="POST" class="subscribe-block-form">
+            <input type="email" name="email" class="subscribe-block-form-input" placeholder="Enter your email here..." required>
+            <input type="submit" class="subscribe-block-form-submit" value="Subscribe">
+        </form>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="main-footer-menus">
+            <div class="columns">
+                <div class="column">
+                    <div class="main-footer-menu">
+                        <div class="main-footer-menu-title">
+                            Casinos
+                        </div>
+                        <ul class="main-footer-menu-list">
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Responsible Gambling
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Deposits & Withdrawals
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Licensing & Regulation
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Privacy policy
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Terms of use
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Cookies policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="main-footer-menu">
+                        <div class="main-footer-menu-title">
+                            Bonus
+                        </div>
+                        <ul class="main-footer-menu-list">
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    New Casinos 2019
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Free Spins No Deposit
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Top Uk Online Casinos
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    No Deposit Casinos
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Mobile Casinos
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="main-footer-menu">
+                        <div class="main-footer-menu-title">
+                            Friespiele
+                        </div>
+                        <ul class="main-footer-menu-list">
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Canadian no deposit codes
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Sitemap
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="main-footer-menu">
+                        <div class="main-footer-menu-title">
+                            Kontakt
+                        </div>
+                        <ul class="main-footer-menu-list">
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Blackjack
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Roulette
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Online scratchcards
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Baccarat
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Video Poker
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Useful Gaming Tips
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Casino how to start guide
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-footer-copyright">
+            <div class="main-footer-copyright-left">
+                Copyright © 2016–2019 hosting-reports.com™. All rights reserved.
+            </div>
+            <div class="main-footer-copyright-right">
+                <a href="#">Terms & Conditions</a> &nbsp;|&nbsp; <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/build/js/app.min.js"></script>
+</body>
+</html>

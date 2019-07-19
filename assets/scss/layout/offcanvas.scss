@@ -1,0 +1,23 @@
+.main-offcanvas {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16);
+  overflow-y: auto;
+  opacity: 0;
+  transition: all 200ms;
+}
+
+.main-offcanvas-active {
+  transform: translateX(280px);
+  opacity: 1;
+  transition: all 200ms;
+}
+
+.main-offcanvas-padding {
+  padding: 20px;
+}

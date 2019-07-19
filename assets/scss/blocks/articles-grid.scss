@@ -1,0 +1,38 @@
+.articles-grid {
+
+}
+
+.articles-grid-item {
+
+}
+
+.articles-grid-item-card {
+  padding: 20px;
+}
+
+.articles-grid-item-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.articles-grid-item-card-title-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.articles-grid-item-card-readmore {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  .button {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    min-width: 200px;
+  }
+}

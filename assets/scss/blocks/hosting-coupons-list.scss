@@ -1,0 +1,152 @@
+.hosting-coupons-list {
+
+}
+
+.hosting-coupons-list-item {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  padding: 20px 25px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 899px) {
+  .hosting-coupons-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.hosting-coupons-list-item-profile {
+  flex: 0 0 260px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 899px) {
+  .hosting-coupons-list-item-profile {
+    flex: 0 1 auto;
+    margin-bottom: 20px;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .hosting-coupons-list-item-profile {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.hosting-coupons-list-item-profile-logo {
+  width: 65px;
+  height: 65px;
+  border-radius: 65px;
+  margin-right: 25px;
+  overflow: hidden;
+}
+
+@media (max-width: 599px) {
+  .hosting-coupons-list-item-profile-logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.hosting-coupons-list-item-profile-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hosting-coupons-list-item-profile-name {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.hosting-coupons-list-item-profile-link {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.64);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $c-green-hover;
+  }
+}
+
+.hosting-coupons-list-item-offer {
+
+}
+
+@media (max-width: 899px) {
+  .hosting-coupons-list-item-offer {
+    margin-bottom: 25px;
+  }
+}
+
+.hosting-coupons-list-item-offer-pre {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.hosting-coupons-list-item-offer-price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #6560F8;
+}
+
+.hosting-coupons-list-item-offer-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hosting-coupons-list-item-action {
+  margin-left: auto;
+}
+
+@media (max-width: 899px) {
+  .hosting-coupons-list-item-action {
+    width: 100%;
+    margin-left: initial;
+  }
+}
+
+.hosting-coupons-list-item-action-text {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 10px;
+}
+
+@media (max-width: 899px) {
+  .hosting-coupons-list-item-action-text {
+    margin-top: 20px;
+  }
+}
+
+.hosting-coupons-list-item-button {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+@media (max-width: 899px) {
+  .hosting-coupons-list-item-button {
+    width: 100%;
+    font-size: 14px;
+  }
+}

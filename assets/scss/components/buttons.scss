@@ -1,0 +1,63 @@
+.button {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #aaaaaa;
+  background-color: #aaaaaa;
+  padding: 16px 22px;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border-color: #9F9F9F;
+    background-color: #9F9F9F;
+  }
+
+  &:active {
+    border-color: #888888;
+    background-color: #888888;
+  }
+}
+
+.button-green {
+  border-color: $c-button-green;
+  background-color: $c-button-green;
+
+  &:hover,
+  &:focus {
+    border-color: $c-button-green-hover;
+    background-color: $c-button-green-hover;
+  }
+
+  &:active {
+    border-color: $c-button-green-active;
+    background-color: $c-button-green-active;
+  }
+}
+
+.button-blue {
+  border-color: $c-button-blue;
+  background-color: $c-button-blue;
+
+  &:hover,
+  &:focus {
+    border-color: $c-button-blue-hover;
+    background-color: $c-button-blue-hover;
+  }
+
+  &:active {
+    border-color: $c-button-blue-active;
+    background-color: $c-button-blue-active;
+  }
+}
+
+.button-shadow {
+  box-shadow: 0 12px 17px rgba(0, 0, 0, 0.17);
+}
+
+.button-full-width {
+  width: 100%;
+}

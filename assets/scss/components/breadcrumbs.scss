@@ -1,0 +1,78 @@
+.breadcrumbs {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.breadcrumbs-home {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.breadcrumbs-home-link {
+  vertical-align: middle;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.64);
+
+  &:hover,
+  &:focus {
+    color: $c-green-hover;
+  }
+
+  &:active {
+    color: $c-green-active;
+  }
+}
+
+.breadcrumbs-home-icon {
+  position: relative;
+  top: -1px;
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.breadcrumbs-item {
+  display: inline-block;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.breadcrumbs-item-link {
+  display: inline-block;
+  text-decoration: none;
+
+  color: rgba(0, 0, 0, 0.64);
+
+  &:hover,
+  &:focus {
+    color: $c-green-hover;
+  }
+
+  &:active {
+    color: $c-green-active;
+  }
+}
+
+.breadcrumbs-light {
+  .breadcrumbs-item-link,
+  .breadcrumbs-home-link {
+    color: rgba(255, 255, 255, 0.64);
+
+    &:hover,
+    &:focus {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+.breadcrumbs-separator {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 7px;
+}

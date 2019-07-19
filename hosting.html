@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Reports</title>
+    <link rel="stylesheet" href="assets/build/css/style.min.css">
+    <meta name="description" content="Hosting reports meta desc">
+    <meta name="keywords" content="Hosting reports meta keywords">
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <meta name="theme-color" content="#6560f8">
+</head>
+<body>
+<div class="main-offcanvas">
+    <div class="main-offcanvas-padding">
+        Offcanvas content here
+    </div>
+</div>
+<header class="main-header">
+    <div class="container">
+        <div class="main-header-left">
+            <a href="#" class="main-header-toggler" data-offcanvas title="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="main-header-toggler-svg"><path style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z" fill="#fff"></path></svg>
+            </a>
+
+            <a href="index.html" class="main-header-logo">
+                <img src="assets/img/logo-white.svg" width="125" height="34" alt="Hosting Reports">
+            </a>
+        </div>
+
+        <div class="main-header-center">
+            <ul class="main-header-menu">
+                <li class="main-header-menu-item main-header-menu-item-active main-header-menu-item-parent">
+                    <div class="dropdown is-hoverable">
+                        <div class="dropdown-trigger">
+                            <a href="#" class="main-header-menu-item-link" aria-haspopup="true" aria-controls="dropdown-menu">
+                                <span>Find Your Hosting</span>
+                            </a>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    VPS Hosting
+                                </a>
+                                <a class="dropdown-item">
+                                    Shared Hosting
+                                </a>
+                                <a href="#" class="dropdown-item is-active">
+                                    Dedicated Hosting
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    VPS Hosting
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item">
+                                    Dedicated Hosting
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    VPS Hosting
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Dedicated Hosting
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-header-menu-item">
+                    <a href="#" class="main-header-menu-item-link">
+                        Reviews
+                    </a>
+                </li>
+                <li class="main-header-menu-item">
+                    <a href="#" class="main-header-menu-item-link">
+                        Coupons
+                    </a>
+                </li>
+                <li class="main-header-menu-item">
+                    <a href="#" class="main-header-menu-item-link">
+                        Guide
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-header-right">
+            <a href="#" data-toggle-search class="main-header-search" title="Search">
+                <img src="assets/img/icons/icon-search.svg" class="main-header-search-img" width="32" height="32" alt="🔍">
+            </a>
+
+            <div id="js-search-modal" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <form action="#" class="search-modal" method="POST">
+                        <input type="search" class="search-modal-input" name="search" placeholder="...">
+                        <input type="submit" class="search-modal-submit" value="Search">
+                    </form>
+                </div>
+                <button class="modal-close is-large" aria-label="close"></button>
+            </div>
+
+            <div class="main-header-language">
+                <div class="dropdown is-hoverable is-right">
+                    <div class="dropdown-trigger">
+                        <a href="#" class="main-header-language-current" aria-haspopup="true" aria-controls="dropdown-language-menu">
+                            <span>ENG</span>
+                        </a>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-language-menu" role="menu">
+                        <div class="dropdown-content">
+                            <a href="#" class="dropdown-item is-active">
+                                ENG
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                GER
+                            </a>
+                            <a href="#" class="dropdown-item">
+                                RUS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main-content main-content-padding">
+    <div class="container">
+
+        <div class="breadcrumbs">
+            <div class="breadcrumbs-home">
+                <a href="#" class="breadcrumbs-home-link">
+                    <img src="assets/img/icons/icon-home.svg" class="breadcrumbs-home-icon" alt="🏠">
+                    Home
+                </a>
+            </div>
+            <div class="breadcrumbs-separator">
+                <img src="assets/img/icons/icons-breadcrumbs-arrow-right.svg" alt="→">
+            </div>
+            <div class="breadcrumbs-item">
+                <a href="#" class="breadcrumbs-item-link">
+                    Belly Fat Reviews
+                </a>
+            </div>
+        </div>
+
+        <div class="columns is-desktop">
+            <div class="column is-two-thirds-desktop">
+                <article class="article-block mt-l" itemscope itemtype="http://schema.org/Article">
+                    <div class="article-block-meta">
+
+                        <div class="article-block-meta-update-date" itemprop="dateModified" content="2019-06-24T14:55:06+00:00">
+                            Update: 24/6/2019
+                        </div>
+                        <meta itemprop="datePublished" content="2019-06-24T14:55:06+00:00">
+                        <meta itemprop="author" content="Hosting Reports">
+                        <meta itemprop="image" content="assets/img/tmp/hosting-companies/logo-greengeeks-large.png">
+                        <meta itemprop="mainEntityOfPage" content="http://example.com">
+                        <div style="display: none" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <div itemprop="logo image" itemscope itemtype="https://schema.org/ImageObject">
+                                <img itemprop="url contentUrl" src="https://example.com/assets/img/logo.png" alt="logo" />
+                                <meta itemprop="width" content="6" />
+                                <meta itemprop="height" content="6" />
+                            </div>
+                            <meta itemprop="name" content="Hosting Reports" />
+                            <meta itemprop="address" content="Hosting Reports address" />
+                            <meta itemprop="telephone" content="Hosting Reports telephone" />
+                        </div>
+                    </div>
+
+                    <h1 class="article-block-title" itemprop="name">
+                        GreenGeeks Review – 10 Things You Need Know
+                    </h1>
+
+                    <meta itemprop="headline" content="GreenGeeks Review – 10 Things You Need Know">
+
+                    <div class="article-block-author mb-l">
+                        By Summer Banks FNS, SPT
+                    </div>
+
+                    <div class="user-content" itemprop="articleBody">
+                        <h2>GreenGeeks Benefits and Results</h2>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+                        </p>
+
+                        <h2>Potential GreenGeeks Side Effects</h2>
+
+                        <p>
+                            Keto Shred safe? The most commonly reported side effects reported from users are headaches, stomach cramps, gas and bloating. There are, however, several side effects associated with a ketogenic diet. According to WebMD, side effects of the ketogenic diet include:
+                        </p>
+                        <ul>
+                            <li>Muscle aches</li>
+                            <li>Dizziness</li>
+                            <li>Low blood pressure</li>
+                            <li>Headaches</li>
+                            <li>Nausea</li>
+                            <li>Abdominal discomfort</li>
+                            <li>Weakness</li>
+                            <li>Irritability</li>
+                            <li>Bad breath</li>
+                            <li>Strong smelling urine</li>
+                            <li>Fatigue</li>
+                            <li>Insomnia</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+            <div class="column">
+                <div class="card mb-xs">
+                    <div class="card-heading">
+                        Greengeeks Features
+                    </div>
+                    <div class="card-padding">
+                        <div class="hosting-features-block">
+                        <div class="hosting-features-block-profile">
+                            <div class="hosting-features-block-profile-logo">
+                                <img src="assets/img/tmp/hosting-companies/logo-greengeeks-large.png" alt="GreenGeeks" class="hosting-features-block-profile-logo-img">
+                            </div>
+                            <a href="#" target="_blank" class="hosting-features-block-profile-link">
+                                www.greengeeks.com
+                            </a>
+                            <div class="hosting-features-block-profile-stars">
+                                <div class="star-rating star-rating-large">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" class="star-rating-star-img" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" target="_blank" class="hosting-features-block-profile-reviews-link">
+                                Greengeeks Review
+                            </a>
+                        </div>
+                        <a href="#" target="_blank" class="button button-green button-shadow button-full-width">Visit site</a>
+
+                        <table class="hosting-features-table mt-m">
+                            <tr class="hosting-features-table-row">
+                                <td class="hosting-features-table-prop">
+                                    Free domain
+                                </td>
+                                <td class="hosting-features-table-val">
+                                    Included
+                                </td>
+                            </tr>
+                            <tr class="hosting-features-table-row">
+                                <td class="hosting-features-table-prop">
+                                    Disk space
+                                </td>
+                                <td class="hosting-features-table-val">
+                                    Unlimited
+                                </td>
+                            </tr>
+                            <tr class="hosting-features-table-row">
+                                <td class="hosting-features-table-prop">
+                                    Bandwidth
+                                </td>
+                                <td class="hosting-features-table-val">
+                                    Unlimited
+                                </td>
+                            </tr>
+                            <tr class="hosting-features-table-row">
+                                <td class="hosting-features-table-prop">
+                                    Domains
+                                </td>
+                                <td class="hosting-features-table-val">
+                                    Unlimited
+                                </td>
+                            </tr>
+                            <tr class="hosting-features-table-row">
+                                <td class="hosting-features-table-prop">
+                                    Mailboxes
+                                </td>
+                                <td class="hosting-features-table-val">
+                                    Unlimited
+                                </td>
+                            </tr>
+                            <tr class="hosting-features-table-row">
+                                <td class="hosting-features-table-prop">
+                                    MySQL Databases
+                                </td>
+                                <td class="hosting-features-table-val">
+                                    Unlimited
+                                </td>
+                            </tr>
+                            <tr class="hosting-features-table-row">
+                                <td class="hosting-features-table-prop">
+                                    Website Builder
+                                </td>
+                                <td class="hosting-features-table-val">
+                                    Included
+                                </td>
+                            </tr>
+                            <tr class="hosting-features-table-row">
+                                <td class="hosting-features-table-prop">
+                                    WordPress
+                                </td>
+                                <td class="hosting-features-table-val">
+                                    Yes
+                                </td>
+                            </tr>
+                            <tr class="hosting-features-table-row">
+                                <td class="hosting-features-table-prop">
+                                    Joomla
+                                </td>
+                                <td class="hosting-features-table-val">
+                                    Yes
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<section class="similar-products-block">
+    <div class="container">
+        <h3 class="similar-products-block-title">
+            Products Similar to GreenGeek
+        </h3>
+        <div class="similar-products-block-subtitle">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et At vero eos et accusam et justo duo dolores et ea rebum.
+        </div>
+
+
+        <div class="similar-products-block-list">
+            <div class="columns is-desktop">
+                <div class="column is-flex">
+                    <div class="similar-products-block-list-item">
+                        <div class="similar-products-block-list-item-profile">
+                            <div class="similar-products-block-list-item-logo">
+                                <img src="assets/img/tmp/hosting-companies/logo-fatcow.png" class="similar-products-block-list-item-logo-img" alt="Fatcow">
+                            </div>
+                            <div class="similar-products-block-list-item-name">
+                                Big fat fat superfat Fatcow
+                                <a href="#" class="similar-products-block-list-item-link" target="_blank">
+                                    www.fatcow.com
+                                </a>
+                                <a href="#" class="similar-products-block-list-item-reviews-link">
+                                    Fatcow reviews
+                                </a>
+                            </div>
+                        </div>
+                        <div class="similar-products-block-list-item-stars">
+                            <div class="star-rating">
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-light.svg" class="star-rating-star-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="similar-products-block-list-item-button">
+                            <a href="#" target="_blank" class="button button-green button-shadow">
+                                Visit website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-flex">
+                    <div class="similar-products-block-list-item">
+                        <div class="similar-products-block-list-item-profile">
+                            <div class="similar-products-block-list-item-logo">
+                                <img src="assets/img/tmp/hosting-companies/logo-fatcow.png" class="similar-products-block-list-item-logo-img" alt="Fatcow">
+                            </div>
+                            <div class="similar-products-block-list-item-name">
+                                Fatcow
+                                <a href="#" class="similar-products-block-list-item-link" target="_blank">
+                                    www.fatcow.com
+                                </a>
+                                <a href="#" class="similar-products-block-list-item-reviews-link">
+                                    Fatcow reviews
+                                </a>
+                            </div>
+                        </div>
+                        <div class="similar-products-block-list-item-stars">
+                            <div class="star-rating">
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-light.svg" class="star-rating-star-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="similar-products-block-list-item-button">
+                            <a href="#" target="_blank" class="button button-green button-shadow">
+                                Visit website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-desktop">
+                <div class="column is-flex">
+                    <div class="similar-products-block-list-item">
+                        <div class="similar-products-block-list-item-profile">
+                            <div class="similar-products-block-list-item-logo">
+                                <img src="assets/img/tmp/hosting-companies/logo-fatcow.png" class="similar-products-block-list-item-logo-img" alt="Fatcow">
+                            </div>
+                            <div class="similar-products-block-list-item-name">
+                                Fatcow
+                                <a href="#" class="similar-products-block-list-item-link" target="_blank">
+                                    www.fatcow.com
+                                </a>
+                                <a href="#" class="similar-products-block-list-item-reviews-link">
+                                    Fatcow reviews
+                                </a>
+                            </div>
+                        </div>
+                        <div class="similar-products-block-list-item-stars">
+                            <div class="star-rating">
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-light.svg" class="star-rating-star-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="similar-products-block-list-item-button">
+                            <a href="#" target="_blank" class="button button-green button-shadow">
+                                Visit website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-flex">
+                    <div class="similar-products-block-list-item">
+                        <div class="similar-products-block-list-item-profile">
+                            <div class="similar-products-block-list-item-logo">
+                                <img src="assets/img/tmp/hosting-companies/logo-fatcow.png" class="similar-products-block-list-item-logo-img" alt="Fatcow">
+                            </div>
+                            <div class="similar-products-block-list-item-name">
+                                Fatcow
+                                <a href="#" class="similar-products-block-list-item-link" target="_blank">
+                                    www.fatcow.com
+                                </a>
+                                <a href="#" class="similar-products-block-list-item-reviews-link">
+                                    Fatcow reviews
+                                </a>
+                            </div>
+                        </div>
+                        <div class="similar-products-block-list-item-stars">
+                            <div class="star-rating">
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-dark.svg" class="star-rating-star-img" alt="⭐">
+                                </div>
+                                <div class="star-rating-star">
+                                    <img src="assets/img/icons/icon-star-light.svg" class="star-rating-star-img" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="similar-products-block-list-item-button">
+                            <a href="#" target="_blank" class="button button-green button-shadow">
+                                Visit website
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="main-footer-menus">
+            <div class="columns">
+                <div class="column">
+                    <div class="main-footer-menu">
+                        <div class="main-footer-menu-title">
+                            Casinos
+                        </div>
+                        <ul class="main-footer-menu-list">
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Responsible Gambling
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Deposits & Withdrawals
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Licensing & Regulation
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Privacy policy
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Terms of use
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Cookies policy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="main-footer-menu">
+                        <div class="main-footer-menu-title">
+                            Bonus
+                        </div>
+                        <ul class="main-footer-menu-list">
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    New Casinos 2019
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Free Spins No Deposit
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Top Uk Online Casinos
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    No Deposit Casinos
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Mobile Casinos
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="main-footer-menu">
+                        <div class="main-footer-menu-title">
+                            Friespiele
+                        </div>
+                        <ul class="main-footer-menu-list">
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Canadian no deposit codes
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Sitemap
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="main-footer-menu">
+                        <div class="main-footer-menu-title">
+                            Kontakt
+                        </div>
+                        <ul class="main-footer-menu-list">
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Blackjack
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Roulette
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Online scratchcards
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Baccarat
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Video Poker
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Useful Gaming Tips
+                                </a>
+                            </li>
+                            <li class="main-footer-menu-list-item">
+                                <a href="#" class="main-footer-menu-list-link">
+                                    Casino how to start guide
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-footer-copyright">
+            <div class="main-footer-copyright-left">
+                Copyright © 2016–2019 hosting-reports.com™. All rights reserved.
+            </div>
+            <div class="main-footer-copyright-right">
+                <a href="#">Terms & Conditions</a> &nbsp;|&nbsp; <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/build/js/app.min.js"></script>
+</body>
+</html>

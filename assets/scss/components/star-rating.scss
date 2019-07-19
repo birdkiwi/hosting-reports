@@ -1,0 +1,29 @@
+.star-rating {
+  display: inline-block;
+  min-width: 75px;
+  font-size: 0;
+}
+
+.star-rating-star {
+  display: inline-block;
+  margin-left: 1px;
+  margin-right: 1px;
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+}
+
+.star-rating-star-img {
+  width: 100%;
+  height: 100%;
+}
+
+.star-rating-large {
+  min-width: 150px;
+
+  .star-rating-star {
+    width: 26px;
+    height: 26px;
+    margin: 0 2px;
+  }
+}
