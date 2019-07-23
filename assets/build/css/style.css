@@ -3606,6 +3606,11 @@ body {
   color: #0a0a0a;
   border-bottom: 1px solid rgba(0, 0, 0, 0.11); }
 
+.main-offcanvas-menu-item-active {
+  color: #23D18B; }
+  .main-offcanvas-menu-item-active .main-offcanvas-menu-item-link {
+    color: #23D18B; }
+
 .main-offcanvas-menu-item-link {
   display: block;
   text-decoration: none;
@@ -3628,6 +3633,11 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.05); }
   .main-offcanvas-submenu-item:first-child {
     border-top: none; }
+
+.main-offcanvas-submenu-item-active {
+  color: #23D18B; }
+  .main-offcanvas-submenu-item-active .main-offcanvas-submenu-item-link {
+    color: #23D18B; }
 
 .main-offcanvas-submenu-item-link {
   display: block;
