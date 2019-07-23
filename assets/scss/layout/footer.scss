@@ -18,10 +18,8 @@
 .main-footer-menus {
   padding-left: 40px;
   padding-right: 40px;
-}
 
-@media (max-width: 899px) {
-  .main-footer-menus {
+  @media (max-width: 899px) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -70,10 +68,8 @@
   padding-top: 25px;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   font-size: 12px;
-}
 
-@media (max-width: 899px) {
-  .main-footer-copyright {
+  @media (max-width: 899px) {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 0;
@@ -82,11 +78,7 @@
 }
 
 .main-footer-copyright-left {
-
-}
-
-@media (max-width: 899px) {
-  .main-footer-copyright-left {
+  @media (max-width: 899px) {
     margin-bottom: 15px;
   }
 }

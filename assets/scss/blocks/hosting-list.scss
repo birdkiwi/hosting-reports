@@ -14,10 +14,8 @@
   font-weight: bold;
   font-size: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.22);
-}
 
-@media (max-width: 799px) {
-  .hosting-list-header {
+  @media (max-width: 799px) {
     display: none;
   }
 }
@@ -78,7 +76,6 @@
 
 .hosting-list-card-property {
   display: flex;
-  align-items: flex-start;
 
   @media (max-width: 799px) {
     flex-basis: auto;
@@ -90,7 +87,6 @@
   display: none;
   align-items: center;
   flex: 0 0 140px;
-  height: 100%;
   color: #fff;
   font-weight: 500;
   padding: 15px;

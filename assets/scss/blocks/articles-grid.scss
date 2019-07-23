@@ -1,12 +1,18 @@
 .articles-grid {
-
+  .column {
+    display: flex;
+  }
 }
 
 .articles-grid-item {
-
+  display: flex;
+  width: 100%;
 }
 
 .articles-grid-item-card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
   padding: 20px;
 }
 
@@ -25,7 +31,8 @@
 }
 
 .articles-grid-item-card-readmore {
-  margin-top: 30px;
+  margin-top: auto;
+  padding-top: 30px;
   margin-bottom: 20px;
   text-align: center;
 

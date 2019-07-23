@@ -12,6 +12,64 @@
 </head>
 <body>
 <div class="main-offcanvas">
+    <ul class="main-offcanvas-menu">
+        <li class="main-offcanvas-menu-item">
+            <a href="index.html" class="main-offcanvas-menu-item-link main-offcanvas-padding">
+                Find Your Hosting
+            </a>
+
+            <ul class="main-offcanvas-submenu">
+                <li class="main-offcanvas-submenu-item">
+                    <a href="#" class="main-offcanvas-submenu-item-link">
+                        VPS Hosting
+                    </a>
+                </li>
+                <li class="main-offcanvas-submenu-item">
+                    <a href="#" class="main-offcanvas-submenu-item-link">
+                        Shared Hosting
+                    </a>
+                </li>
+                <li class="main-offcanvas-submenu-item">
+                    <a href="#" class="main-offcanvas-submenu-item-link">
+                        Dedicated Hosting
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="main-offcanvas-menu-item">
+            <a href="hosting.html" class="main-offcanvas-menu-item-link main-offcanvas-padding">
+                Reviews
+            </a>
+
+            <ul class="main-offcanvas-submenu">
+                <li class="main-offcanvas-submenu-item">
+                    <a href="#" class="main-offcanvas-submenu-item-link">
+                        A2Hosting
+                    </a>
+                </li>
+                <li class="main-offcanvas-submenu-item">
+                    <a href="#" class="main-offcanvas-submenu-item-link">
+                        HostGator
+                    </a>
+                </li>
+                <li class="main-offcanvas-submenu-item">
+                    <a href="#" class="main-offcanvas-submenu-item-link">
+                        GreenGeeks
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="main-offcanvas-menu-item">
+            <a href="hosting-coupons.html" class="main-offcanvas-menu-item-link main-offcanvas-padding">
+                Reviews
+            </a>
+        </li>
+        <li class="main-offcanvas-menu-item">
+            <a href="articles.html" class="main-offcanvas-menu-item-link main-offcanvas-padding">
+                Guide
+            </a>
+        </li>
+    </ul>
     <div class="main-offcanvas-padding">
         Offcanvas content here
     </div>
@@ -65,10 +123,27 @@
                         </div>
                     </div>
                 </li>
-                <li class="main-header-menu-item">
-                    <a href="#" class="main-header-menu-item-link">
-                        Reviews
-                    </a>
+                <li class="main-header-menu-item main-header-menu-item-parent">
+                    <div class="dropdown is-hoverable">
+                        <div class="dropdown-trigger">
+                            <a href="#" class="main-header-menu-item-link" aria-haspopup="true" aria-controls="dropdown-menu2">
+                                Reviews
+                            </a>
+                        </div>
+                        <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    A2Hosting
+                                </a>
+                                <a class="dropdown-item">
+                                    HostGator
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    GreenGeeks
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li class="main-header-menu-item">
                     <a href="#" class="main-header-menu-item-link">
@@ -155,24 +230,75 @@
             </div>
         </div>
         <div class="hero-block-buttons">
-            <a href="#" class="hero-block-buttons-item hero-block-buttons-item-parent">
-                <div class="hero-block-buttons-item-icon">
-                    <img class="hero-block-buttons-item-icon-img" src="assets/img/icons/icon-server.svg" alt="">
+            <div class="dropdown is-right">
+                <div class="dropdown-trigger">
+                    <button class="hero-block-buttons-item hero-block-buttons-item-parent" aria-haspopup="true" aria-controls="dropdown-hero-menu-1">
+                        <span class="hero-block-buttons-item-icon">
+                            <img class="hero-block-buttons-item-icon-img" src="assets/img/icons/icon-server.svg" alt="">
+                        </span>
+                        Web Hosting
+                    </button>
                 </div>
-                Web Hosting
-            </a>
-            <a href="#" class="hero-block-buttons-item hero-block-buttons-item-parent">
-                <div class="hero-block-buttons-item-icon">
-                    <img class="hero-block-buttons-item-icon-img" src="assets/img/icons/icon-ip-location.svg" alt="">
+                <div class="dropdown-menu" id="dropdown-hero-menu-1" role="menu">
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item is-active">
+                            Menu 1
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Menu 2
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Menu 3
+                        </a>
+                    </div>
                 </div>
-                Server Location
-            </a>
-            <a href="#" class="hero-block-buttons-item hero-block-buttons-item-parent">
-                <div class="hero-block-buttons-item-icon">
-                    <img class="hero-block-buttons-item-icon-img" src="assets/img/icons/icon-notebook.svg" alt="">
+            </div>
+            <div class="dropdown is-right">
+                <div class="dropdown-trigger">
+                    <button class="hero-block-buttons-item hero-block-buttons-item-parent" aria-haspopup="true" aria-controls="dropdown-hero-menu-2">
+                        <span class="hero-block-buttons-item-icon">
+                            <img class="hero-block-buttons-item-icon-img" src="assets/img/icons/icon-ip-location.svg" alt="">
+                        </span>
+                        Server Location
+                    </button>
                 </div>
-                CMS Hosting
-            </a>
+                <div class="dropdown-menu" id="dropdown-hero-menu-2" role="menu">
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item is-active">
+                            Menu 1
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Menu 2
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Menu 3
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown is-right">
+                <div class="dropdown-trigger">
+                    <button class="hero-block-buttons-item hero-block-buttons-item-parent" aria-haspopup="true" aria-controls="dropdown-hero-menu-3">
+                        <span class="hero-block-buttons-item-icon">
+                            <img class="hero-block-buttons-item-icon-img" src="assets/img/icons/icon-notebook.svg" alt="">
+                        </span>
+                        CMS Hosting
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-hero-menu-3" role="menu">
+                    <div class="dropdown-content">
+                        <a href="#" class="dropdown-item is-active">
+                            Menu 1
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Menu 2
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            Menu 3
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -417,13 +543,1153 @@
                             <div class="hosting-list-card-property-value">
                                 <div class="hosting-list-card-logo">
                                     <div class="hosting-list-card-logo-image">
-                                        <img src="assets/img/tmp/hosting-companies/logo-greengeeks.png" alt="GreenGeeks" itemprop="image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-a2-hosting.png" alt="A2Hosting" itemprop="image">
                                     </div>
                                     <div class="hosting-list-card-logo-name" itemprop="name">
-                                        GreenGeeks
+                                        A2Hosting
                                     </div>
                                     <a href="#" class="hosting-list-card-logo-link">
-                                        GreenGeeks review
+                                        A2Hosting review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-interserver.png" alt="InterServer" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        InterServer
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        InterServer review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-bluehost.png" alt="Bluehost" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        Bluehost
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        Bluehost review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-hostgator.png" alt="HostGator" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        HostGator
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        HostGator review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-hostmonster.png" alt="HostMonster" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        HostMonster
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        HostMonster review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-hostpapa.png" alt="HostPapa" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        HostPapa
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        HostPapa review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-liquidweb.png" alt="LiquidWeb" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        LiquidWeb
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        LiquidWeb review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-powweb.png" alt="PowWeb" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        PowWeb
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        PowWeb review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-ipage.png" alt="iPage" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        iPage
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        iPage review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-webhostingpad.png" alt="WebHostingPad" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        WebHostingPad
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        WebHostingPad review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-cloudways.png" alt="CloudWays" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        CloudWays
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        CloudWays review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-tmd-hosting.png" alt="TMD Hosting" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        TMD Hosting
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        TMD Hosting review
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-stars">
+                            <div class="hosting-list-card-property-name">
+                                Review
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="star-rating">
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-dark.svg" alt="⭐">
+                                    </div>
+                                    <div class="star-rating-star">
+                                        <img src="assets/img/icons/icon-star-light.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-bandwidth">
+                            <div class="hosting-list-card-property-name">
+                                Bandwidth
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-storage">
+                            <div class="hosting-list-card-property-name">
+                                Storage
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Unlimited
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-domain">
+                            <div class="hosting-list-card-property-name">
+                                Domain
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Included
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-perfomance">
+                            <div class="hosting-list-card-property-name">
+                                Performance
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                Top Notch
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-price">
+                            <div class="hosting-list-card-property-name">
+                                Price
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <span itemprop="priceCurrency" content="USD">$</span> <span itemprop="price" content="0,99">0.99</span>
+                            </div>
+                        </div>
+                        <div class="hosting-list-card-property hosting-list-card-action">
+                            <div class="hosting-list-card-property-name">
+                                Action
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <a href="#" class="button button-green button-shadow button-full-width hosting-list-card-button">
+                                    Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hosting-list-card" itemscope itemtype="http://schema.org/Product">
+                        <div class="hosting-list-card-property hosting-list-card-hosting">
+                            <div class="hosting-list-card-property-name">
+                                Hosting
+                            </div>
+                            <div class="hosting-list-card-property-value">
+                                <div class="hosting-list-card-logo">
+                                    <div class="hosting-list-card-logo-image">
+                                        <img src="assets/img/tmp/hosting-companies/logo-inmotion.png" alt="Inmotion" itemprop="image">
+                                    </div>
+                                    <div class="hosting-list-card-logo-name" itemprop="name">
+                                        Inmotion
+                                    </div>
+                                    <a href="#" class="hosting-list-card-logo-link">
+                                        Inmotion review
                                     </a>
                                 </div>
                             </div>
@@ -576,13 +1842,13 @@
                         <li class="card-menu-item">
                             <a href="#" class="card-menu-item-link">Managed Hosting</a>
                         </li>
-                        <li class="card-menu-item card-menu-item-active">
+                        <li class="card-menu-item">
                             <a href="#" class="card-menu-item-link">Unmanaged Hosting</a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="card card-padding">
+                <div class="card card-padding mb-xs">
                     <div class="card-title">
                         OS System
                     </div>
@@ -591,8 +1857,101 @@
                         <li class="card-menu-item">
                             <a href="#" class="card-menu-item-link">Linux Hosting</a>
                         </li>
-                        <li class="card-menu-item card-menu-item-active">
+                        <li class="card-menu-item">
                             <a href="#" class="card-menu-item-link">Windows Hosting</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card card-padding mb-xs">
+                    <div class="card-title">
+                        CMS Hosting
+                    </div>
+
+                    <ul class="card-menu">
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Wordpress Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Drupal Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Joomla Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Magento Hosting</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card card-padding mb-xs">
+                    <div class="card-title">
+                        Server Location
+                    </div>
+
+                    <ul class="card-menu">
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">USA Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">UK Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Canada Hosting</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card card-padding mb-xs">
+                    <div class="card-title">
+                        Server Location
+                    </div>
+
+                    <ul class="card-menu">
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">SSD Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">HDD Hosting</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card card-padding mb-xs">
+                    <div class="card-title">
+                        Control Panel
+                    </div>
+
+                    <ul class="card-menu">
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Cpanel Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">WHM Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">DirectAdmin Hosting</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card card-padding">
+                    <div class="card-title">
+                        Programming
+                    </div>
+
+                    <ul class="card-menu">
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">PHP Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Java Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">Python Hosting</a>
+                        </li>
+                        <li class="card-menu-item">
+                            <a href="#" class="card-menu-item-link">MySQL Hosting</a>
                         </li>
                     </ul>
                 </div>

@@ -21,3 +21,62 @@
 .main-offcanvas-padding {
   padding: 20px;
 }
+
+.main-offcanvas-menu,
+.main-offcanvas-submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-offcanvas-menu-item {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  color: #0a0a0a;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.main-offcanvas-menu-item-link {
+  display: block;
+  text-decoration: none;
+  color: #0a0a0a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    color: $c-green-hover;
+  }
+}
+
+.main-offcanvas-submenu {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.main-offcanvas-submenu-item {
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+  color: #0a0a0a;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.main-offcanvas-submenu-item-link {
+  display: block;
+  text-decoration: none;
+  color: #0a0a0a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    color: $c-green-hover;
+  }
+}
